@@ -26,7 +26,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')
         //          ->hourly();
-        $schedule->command('mailchimp:send')->everyThirtyMinutes();
+        //$schedule->command('mailchimp:send')->everyThirtyMinutes();
     }
 
     /**
