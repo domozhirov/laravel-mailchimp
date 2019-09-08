@@ -25,7 +25,7 @@ class SendUserListToMailchimp extends Command
      *
      * @var string
      */
-    protected $signature = 'mailchimp:send {listId}';
+    protected $signature = 'mailchimp:send {listId?}';
 
     /**
      * The console command description.
@@ -61,8 +61,8 @@ class SendUserListToMailchimp extends Command
         }
 
         $mailchimp = new MailChimp($api_key);
-        $list_id   = $this->argument('listId'); // b9e1aff289
 
+        $list_id   = $this->argument('listId') ?? 'b9e1aff289';
         $user_list = UserList::all();
 
         foreach ($user_list as $user) {
