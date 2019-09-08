@@ -1,6 +1,6 @@
 ## Installation
 ```
-$ composer install && npm install
+$ composer update && npm install
 ```
 
 Open ```.env``` and enter necessary config for DB and Mailchimp api key.
