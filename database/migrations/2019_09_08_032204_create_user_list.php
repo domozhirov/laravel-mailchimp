@@ -18,7 +18,7 @@ class CreateUserList extends Migration
             $table->string('name');
             $table->string('lastname');
             $table->string('email')->unique();
-            $table->tinyInteger('signed')->default(0);
+            $table->tinyInteger('subscribed')->default(0);
             $table->timestamp('synchronized_at')->nullable();
             $table->timestamps();
         });

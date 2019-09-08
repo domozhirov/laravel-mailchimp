@@ -4,7 +4,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class UserListSeederTable extends Seeder
+class UserListTableSeeder extends Seeder
 {
     /**
      * Fake users

@@ -17,7 +17,7 @@ class UserList extends Model
         'name',
         'lastname',
         'email',
-        'signed',
+        'subscribed',
         'synchronized_at',
     ];
 }

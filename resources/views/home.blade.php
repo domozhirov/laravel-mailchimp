@@ -15,7 +15,7 @@
                                 <th scope="col">First name</th>
                                 <th scope="col">Last name</th>
                                 <th scope="col">Email</th>
-                                <th scope="col">Signed</th>
+                                <th scope="col">Subscribed</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -26,7 +26,7 @@
                                         <td>{{ $user->name }}</td>
                                         <td>{{ $user->lastname }}</td>
                                         <td>{{ $user->email }}</td>
-                                        <td>@if ($user->signed) + @else - @endif</td>
+                                        <td>@if ($user->subscribed) + @else - @endif</td>
                                     </tr>
                                 @endforeach
                             @else
