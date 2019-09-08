@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'user-list'], function() {
+    Route::get('/add', 'UserList\AddController@showAddForm')->name('userList.showAddForm');
+    Route::post('/add', 'UserList\AddController@add')->name('userList.add');
 });
